@@ -15,18 +15,22 @@ done
 
 echo "Setting microG app permissions [start]"
 
-pm grant --user 0 com.android.vending android.permission.FAKE_PACKAGE_SIGNATURE
-pm grant --user 0 com.google.android.gms android.permission.FAKE_PACKAGE_SIGNATURE
-pm grant --user 0 com.google.android.gms android.permission.ACCESS_FINE_LOCATION
-pm grant --user 0 com.google.android.gms android.permission.ACCESS_BACKGROUND_LOCATION
-pm grant --user 0 com.google.android.gms android.permission.WRITE_EXTERNAL_STORAGE
-pm grant --user 0 com.google.android.gms android.permission.READ_PHONE_STATE
+/system/bin/pm grant --user 0 com.android.vending android.permission.FAKE_PACKAGE_SIGNATURE
+/system/bin/pm grant --user 0 com.google.android.gms android.permission.FAKE_PACKAGE_SIGNATURE
+/system/bin/pm grant --user 0 com.google.android.gms android.permission.ACCESS_COARSE_LOCATION
+/system/bin/pm grant --user 0 com.google.android.gms android.permission.ACCESS_FINE_LOCATION
+/system/bin/pm grant --user 0 com.google.android.gms android.permission.ACCESS_BACKGROUND_LOCATION
+/system/bin/pm grant --user 0 com.google.android.gms android.permission.WRITE_EXTERNAL_STORAGE
+/system/bin/pm grant --user 0 com.google.android.gms android.permission.READ_PHONE_STATE
+/system/bin/pm grant --user 0 com.google.android.gms android.permission.GET_ACCOUNTS
 
-pm grant com.android.vending android.permission.FAKE_PACKAGE_SIGNATURE
-pm grant com.google.android.gms android.permission.FAKE_PACKAGE_SIGNATURE
-pm grant com.google.android.gms android.permission.ACCESS_FINE_LOCATION
-pm grant com.google.android.gms android.permission.ACCESS_BACKGROUND_LOCATION
-pm grant com.google.android.gms android.permission.WRITE_EXTERNAL_STORAGE
-pm grant com.google.android.gms android.permission.READ_PHONE_STATE
+/system/bin/pm grant com.android.vending android.permission.FAKE_PACKAGE_SIGNATURE
+/system/bin/pm grant com.google.android.gms android.permission.FAKE_PACKAGE_SIGNATURE
+/system/bin/pm grant com.google.android.gms android.permission.ACCESS_COARSE_LOCATION
+/system/bin/pm grant com.google.android.gms android.permission.ACCESS_FINE_LOCATION
+/system/bin/pm grant com.google.android.gms android.permission.ACCESS_BACKGROUND_LOCATION
+/system/bin/pm grant com.google.android.gms android.permission.WRITE_EXTERNAL_STORAGE
+/system/bin/pm grant com.google.android.gms android.permission.READ_PHONE_STATE
+/system/bin/pm grant com.google.android.gms android.permission.GET_ACCOUNTS
 
 echo "Setting microG app permissions [done]"
