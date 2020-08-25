@@ -1,14 +1,13 @@
 <!-- microG Installer -->
 <permissions>
     <privapp-permissions package="com.google.android.gms">
+        <permission name="android.permission.FAKE_PACKAGE_SIGNATURE"/>
         <permission name="android.permission.INSTALL_LOCATION_PROVIDER"/>
         <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
         <permission name="android.permission.ACCESS_FINE_LOCATION"/>
         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
         <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
-        <permission name="android.permission.FAKE_PACKAGE_SIGNATURE"/>
         <permission name="android.permission.GET_ACCOUNTS" />
-        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
         <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
     </privapp-permissions>
 
@@ -21,6 +20,7 @@
 
     <!-- For real Play Store; Fake Store will not use all except one (FAKE_PACKAGE_SIGNATURE) of them -->
     <privapp-permissions package="com.android.vending">
+        <permission name="android.permission.FAKE_PACKAGE_SIGNATURE" />
         <permission name="android.permission.ALLOCATE_AGGRESSIVE" />
         <permission name="android.permission.BACKUP" />
         <permission name="android.permission.BATTERY_STATS" />
@@ -31,7 +31,6 @@
         <permission name="android.permission.CONNECTIVITY_INTERNAL" />
         <permission name="android.permission.DELETE_PACKAGES" />
         <permission name="android.permission.DUMP" />
-        <permission name="android.permission.FAKE_PACKAGE_SIGNATURE" />
         <permission name="android.permission.FORCE_STOP_PACKAGES" />
         <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
         <permission name="android.permission.GET_APP_OPS_STATS" />

@@ -1,7 +1,7 @@
 id=microg_installer_a5_a7_2017
 name=microG Installer for A5/A7 (2017/LOS17.1)
-version=v2020.36
-versionCode=2020036
+version=v2020.44
+versionCode=2020044
 author=Draekko
 description=Install microG for LOS17.1 for A5 & A7 (2017)
 
